@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url("imgs/fundo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12, 12, 12);
+
+    & nav{
+        display: flex;
+        align-items: center;
+
+        & input{
+            width: 65vw;
+            height: 5vh;
+            margin-left: 5vw;
+            margin-right: 6vw;
+            padding-left: 20px;
+            border-radius: 10px;
+            border: none;   
+            background-color: rgb(26, 26, 26);
+            color: rgb(233, 255, 241);
+            
+        }
+        & a:hover{
+            border-radius: 100%;
+            background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+        }
+    }
+}
+.home{
+    width: 100%;
+    height: 91vh;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .titulo{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 6em;
+            color: rgb(233, 255, 241);
+            margin: 30px;
+        }
+
+        & .busca{
+            width: 55vw;
+            height: 7vh;
+            border-radius: 15px;
+            text-align: left;
+            padding: 20px;
+            border: none;
+        }
+
+        & .recentes{
+            width: 420px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+
+            & .atalhos{
+                width: 120px;
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                margin: 3px;
+                border-radius: 5px;
+                
+
+                & img{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            & .atalhos:hover{
+                background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+                box-shadow: 5px, 5px, 5px black;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 17vh;
+    background-color: rgb(12, 12, 12);
+
+    & .informacoes{
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        color: rgb(233, 255, 241);
+    }
+
+    & .caminho{
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        margin-left: auto;
+        color: rgb(233, 255, 241);
+    }
+
+    & a{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(233, 255, 241);
+    }
+}
+.fa-solid{
+    margin: 10px;
+    color: aliceblue;
+}
+.buttom{
+    opacity: 0;
+}
