@@ -9,17 +9,96 @@
 </head>
 <body>
         <header>
-            <nav>
+            <nav id="nav">
                 <a href=""><i class="fa-solid fa-arrow-left"></i></a>
                 <a href=""><i class="fa-solid fa-arrow-right"></i></a>
                 <a href=""><i class="fa-solid fa-rotate-right"></i></a>
                 <input type="url" placeholder="Busque e descubra">
-                <a><i class="fa-solid fa-star"></i></a>
-                <a><i class="fa-solid fa-download"></i></a>
-                <a><i class="fa-solid fa-circle-user"></i></a>
-                <a><i class="fa-solid fa-bars"></i></a>
+                <button id="favoritos"><i class="fa-solid fa-star"></i></button>
+                <button id="downloads"><i class="fa-solid fa-download"></i></button>
+                <button id="user"><i class="fa-solid fa-circle-user"></i></button>
+                <button id="config"><i class="fa-solid fa-bars"></i></button>
             </nav>
         </header>
+        <div class="page_fav">
+            <div class="pages">
+                <i class="fa-solid fa-earth-americas"></i>
+                <a href=""><h2>Page Name</h2></a>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="pages">
+                <i class="fa-solid fa-earth-americas"></i>
+                <a href=""><h2>Page Name</h2></a>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="pages">
+                <i class="fa-solid fa-earth-americas"></i>
+                <a href=""><h2>Page Name</h2></a>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="pages">
+                <i class="fa-solid fa-earth-americas"></i>
+                <a href=""><h2>Page Name</h2></a>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+
+        <div class="page_down">
+            <div class="pages">
+                <i class="fa-solid fa-file"></i>
+                <a href=""><h2>File Name</h2></a>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="pages">
+                <i class="fa-solid fa-file"></i>
+                <a href=""><h2>File Name</h2></a>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="pages">
+                <i class="fa-solid fa-file"></i>
+                <a href=""><h2>File Name</h2></a>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="pages">
+                <i class="fa-solid fa-file"></i>
+                <a href=""><h2>File Name</h2></a>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+
+        <div class="page_user">
+            <div class="profile">
+                <i class ="fa-solid fa-user"></i>
+                <h2>Name User</h2>
+                <p>name_user@gmail.com <i class="fa-solid fa-pen"></i></p>
+            </div>
+            <div class="accounts">
+                <div class="account">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Name User</h3>
+                </div>
+                <div class="account">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Name User</h3>
+                </div>
+                <div class="account">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Name User</h3>
+                </div>
+                <div class="account">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Name User</h3>
+                </div>
+                <div class="account">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Name User</h3>
+                </div>
+                <div class="account">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Name User</h3>
+                </div>
+            </div>
+        </div>
         <div class="home">
             <div class="principal">
                 <h1 class="titulo">Hoope</h1>
@@ -65,5 +144,7 @@
                 <a href="">Configurações</a> 
             </div>
         </footer>
+
+        <script src="/scripts/funcoes.js"></script>
 </body>
 </html>
