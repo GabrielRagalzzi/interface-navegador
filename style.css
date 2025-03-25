@@ -4,6 +4,13 @@
     text-decoration: none;
     list-style: none;
 }
+
+:root{
+    --color-black: rgb(12, 12, 12);
+    --color-white: rgb(233, 255, 241);
+    --color-green: rgb(7, 87, 0);
+    --color-hover: rgb(255, 255, 255, 0.2); 
+}
 body{
     width: 100%;
     height: 100vh;
@@ -17,9 +24,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(12, 12, 12);
+    background-color: var(--color-black);
     position: relative;
     z-index: 1;
+    font-size: 15px;
 
     & nav{
         width: 95%;
@@ -37,21 +45,22 @@ header{
             border-radius: 10px;
             border: none;   
             background-color: rgb(26, 26, 26);
-            color: rgb(233, 255, 241);
+            color: var(--color-white);
             
         }
         button{
             background: transparent;
             border-style: none;
+            font-size: 15px;
         }
    
         & button:hover{
             border-radius: 100%;
-            background: rgba(255, 255, 255, 0.2);
+            background: var(--color-hover);
         }
         & a:hover{
             border-radius: 100%;
-            background: rgba(255, 255, 255, 0.2);
+            background: var(--color-hover);
         }
     }
 }
@@ -71,7 +80,7 @@ header{
         & .titulo{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 6em;
-            color: rgb(233, 255, 241);
+            color: var(--color-white);
             margin: 30px;
         }
 
@@ -120,14 +129,14 @@ footer{
     display: flex;
     width: 100%;
     height: 130px;
-    background-color: rgb(12, 12, 12);
+    background-color: var(--color-black);
 
     & .informacoes{
         font-size: 1em;
         display: flex;
         flex-direction: column;
         margin: 20px;
-        color: rgb(233, 255, 241);
+        color: var(--color-white);
     }
 
     & .caminho{
@@ -136,17 +145,17 @@ footer{
         flex-direction: column;
         margin: 20px;
         margin-left: auto;
-        color: rgb(233, 255, 241);
+        color: var(--color-white);
     }
 
     & a{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: rgb(233, 255, 241);
+        color: var(--color-white);
     }
 }
 .fa-solid{
     margin: 10px;
-    color: aliceblue;
+    color: var(--color-white);
 }
 .buttom{
     opacity: 0;
@@ -164,8 +173,8 @@ footer{
     right: 0;
     margin-right: 10vw;
 
-    background-color: rgb(12, 12, 12);
-    color: azure;
+    background-color: var(--color-black);
+    color: var(--color-white);
     font-size: none;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -184,8 +193,8 @@ footer{
     right: 0;
     margin-right: 7.5vw;
 
-    background-color: rgb(12, 12, 12);
-    color: azure;
+    background-color: var(--color-black);
+    color: var(--color-white);
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -194,7 +203,7 @@ footer{
     width: 30vw;
     height: 70vh;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -202,8 +211,8 @@ footer{
     right: 0;
     margin-right: 5.5vw;
 
-    background-color: rgb(12, 12, 12);
-    color: azure;
+    background-color: var(--color-black);
+    color: var(--color-white);
     overflow-y: auto;
     overflow-x: hidden;
 
@@ -225,7 +234,7 @@ footer{
             border-radius: 100%;
             border: 2px white solid;
             font-size: 30px;
-            color: white;
+            color: var(--color-white);
             
         }
 
@@ -254,7 +263,7 @@ footer{
         }
     }
     & .account:hover{
-        background: rgba(255, 255, 255, 0.2);
+        background: var(--color-hover);
     }
 }
 
@@ -268,7 +277,69 @@ footer{
 }
 .pages:hover{
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.2);
+    background:var(--color-hover);
+}
+
+.page_config{
+    width: 30vw;
+    height: 80vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+
+    background-color: var(--color-black);
+    color: var(--color-white);
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    & .item{
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: initial;
+        align-items: center;
+        padding: 5px;
+        margin-left: 15px;
+    }
+    & .item:hover{
+        background: var(--color-hover);
+    }
+}
+ .color{
+    width: 30vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    padding: 5px;
+    gap: 15px;
+    background: linear-gradient(45deg, white, #00ff00, #009b00, green, #005500, black);
+
+    & .theme{
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        border: 2px white solid;
+    }
+
+    & #white{
+        background: linear-gradient(45deg, #949494, var(--color-white));
+    }
+    & #green{
+        background: linear-gradient(45deg, #161616, var(--color-green));
+    }
+    & #black{
+        background: linear-gradient(45deg, #161616, var(--color-black));
+    }
+    
+}
+.linha{
+    width: 100%;
+    border-top: 1px var(--color-white) solid;
 }
 
 a{

@@ -6,6 +6,7 @@ var page_config = document.querySelector("#config");
 var fav = document.querySelector(".page_fav");
 var down = document.querySelector(".page_down");
 var user = document.querySelector(".page_user");
+var config = document.querySelector(".page_config");
 
 page_fav.addEventListener("click", function() {
 
@@ -34,5 +35,15 @@ page_user.addEventListener("click", function(){
     }
     else{
         user.style.display = "flex";
+    }
+});
+
+page_config.addEventListener("click", function(){
+
+    if(config.style.display == "flex"){
+        config.style.display = "none";
+    }
+    else{
+        config.style.display = "flex";
     }
 });
