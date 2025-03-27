@@ -47,3 +47,9 @@ page_config.addEventListener("click", function(){
         config.style.display = "flex";
     }
 });
+
+function theme(color){
+    var body = document.querySelector("body");
+
+    body.className = color;
+}

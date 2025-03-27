@@ -3,18 +3,19 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+    transition: 0.2s;
 }
 
 :root{
     --color-black: rgb(12, 12, 12);
-    --color-white: rgb(233, 255, 241);
-    --color-green: rgb(7, 87, 0);
+    --color-white: rgb(248, 248, 248);
+    --color-green: rgb(0, 87, 0);
     --color-hover: rgb(255, 255, 255, 0.2); 
 }
 body{
     width: 100%;
     height: 100vh;
-    background: url("imgs/fundo.jpg");
+    background: linear-gradient(rgb(12, 12, 12, 0.1), rgb(12, 12, 12, 0.3)), url("/imgs/fundo.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -64,6 +65,7 @@ header{
         }
     }
 }
+
 .home{
     width: 100%;
     height: 91vh;
@@ -111,9 +113,9 @@ header{
                 border-radius: 5px;
                 
 
-                & img{
-                    width: 80px;
-                    height: 80px;
+                & .fa-globe{
+                    color: var(--color-black);
+                    font-size: 80px;
                 }
             }
             & .atalhos:hover{
@@ -317,7 +319,7 @@ footer{
     border-top-right-radius: 60px;
     padding: 5px;
     gap: 15px;
-    background: linear-gradient(45deg, white, #00ff00, #009b00, green, #005500, black);
+    background: linear-gradient(45deg, #e5ffeb, #66ff66, #00ff00, #00cc00, #005500, black);
 
     & .theme{
         width: 70px;
@@ -336,6 +338,179 @@ footer{
         background: linear-gradient(45deg, #161616, var(--color-black));
     }
     
+}
+
+body.white {
+    *{
+        transition: 0.2s;
+    }
+
+    header{
+        background-color: var(--color-white);
+        box-shadow: -5px 5px 3px var(--color-black);
+
+        & input{
+            background-color: rgb(218, 218, 218);
+            color: var(--color-black);
+        }
+
+        & button:hover{
+            background-color: rgba(190, 190, 190, 0.329);
+        }
+
+        & a:hover{
+            background-color: rgba(190, 190, 190, 0.329);
+        }
+
+    }
+
+    .home{
+        text-shadow: -3px 3px 3px var(--color-black);
+        color: var(--color-white);
+
+        & .titulo{
+            color: var(--color-white);
+            text-shadow: -3px 3px 3px rgb(41, 41, 41);
+        }
+
+        & .busca{
+            box-shadow: -5px 5px 5px var(--color-black);
+        }
+        
+        & .fa-globe{
+            color: var(--color-white);
+        }
+
+        & .atalhos:hover{
+            background-color: rgba(190, 190, 190, 0.329);
+        }
+    }
+
+    .fa-solid{
+        color: var(--color-black);
+    }
+
+    .page_fav{
+        background-color: var(--color-white);
+        color: var(--color-black);
+    }
+
+    .page_user{
+        background-color: var(--color-white);
+        color: var(--color-black);
+
+        .fa-user{
+            color: var(--color-black);
+            border: 2px var(--color-black) solid;
+        }
+        
+        & .account:hover{
+            background-color: rgba(190, 190, 190, 0.329);
+        }
+    }
+
+    .page_down{
+        background-color: var(--color-white);
+        color: var(--color-black);
+    }
+
+    .page_config{
+        background-color: var(--color-white);
+        color: var(--color-black);
+
+        & .theme{
+            border: 2px var(--color-black) solid;
+        }
+
+        & .item:hover{
+            background-color: rgba(190, 190, 190, 0.329);
+        }
+    }
+    .pages:hover{
+        background-color: rgba(190, 190, 190, 0.329);
+    }
+    .color{
+        background: linear-gradient(45deg, #00d100, #b3ffb3, white, #cbffcb, #00ff00, rgb(20, 167, 0));
+    }
+
+    .linha{
+        border-top: 1px var(--color-black) solid;
+    }
+
+}
+
+body.green {
+    *{
+        transition: 0.2s;
+    }
+
+    header{
+        background-color: var(--color-green);
+        box-shadow: -3px 3px 3px var(--color-black);
+
+        & input{
+            background-color: rgb(0, 56, 5);
+        }
+
+    }
+
+    .home{
+        text-shadow: -3px 3px 3px var(--color-black);
+        color: var(--color-white);
+
+        & .titulo{
+            color: var(--color-green);
+        }
+
+        & .busca{
+            box-shadow: -5px 5px 5px var(--color-black);
+        }
+        
+        & .fa-globe{
+            color: var(--color-white);
+        }
+    }
+
+    .fa-solid{
+        color: var(--color-white);
+    }
+
+    .page_fav{
+        background-color: var(--color-green);
+        color: var(--color-white);
+    }
+
+    .page_user{
+        background-color: var(--color-green);
+        color: var(--color-white);
+
+        .fa-user{
+            color: var(--color-black);
+            border: 2px var(--color-black) solid;
+        }
+    }
+
+    .page_down{
+        background-color: var(--color-green);
+        color: var(--color-white);
+    }
+
+    .page_config{
+        background-color: var(--color-green);
+        color: var(--color-white);
+
+        & .theme{
+            border: 2px var(--color-white) solid;
+        }
+    }
+    .color{
+        background: linear-gradient(45deg, #003d00, #005c00, #14a700, #00ff00, #cbffcb, #ffffff);
+    }
+
+    .linha{
+        border-top: 1px var(--color-white) solid;
+    }
+
 }
 .linha{
     width: 100%;
